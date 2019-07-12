@@ -25,7 +25,12 @@ x = int(input("Nhập số cần tính giai thừa: "))
 for i in range(1,x+1):
     result2=result2*i
 print("Giai thừa của",x,"là",result2)
+array = [1,435,34,2,6,78,354,7658,345,4,5,657,568,4568,345]
+print("Before order: ",array)
 
-
+array.sort()
+print("After ascending order :",array)
+array.sort(reverse=True)
+print("After descending order :",array)
 
 
