@@ -70,10 +70,49 @@ class InputOutputString(object):
     def printString(self):
         if not self.Str:
             print("Chuoi rong")
-        
-        print(self.Str)
+        else:
+            print(self.Str)
 
 result5 = InputOutputString()
 result5.printString()
+# Bai 6
+# Tinh hang tinh binh phuong cua mot so
 
+#Note: Trong python co ham tinh binh phuong nhanh **
+
+
+def Square2(num):
+    return num ** 2
+
+def Square(num):
+    return num*num
+
+x = input("Nhap so muon tinh binh phuong:")
+while(not x.isdigit()):
+  x = input("Chuoi nhap vao ko duoc la so.Vui long nhap lai:")
+
+result6=int(x)
+print("Ket qua binh phuong cua",result6,"la",Square(result6))
+# Bai 7
+# Python có nhiều hàm được tích hợp sẵn, nếu không biết cách sử dụng nó, bạn có thể đọc tài liệu trực tuyến hoặc tìm vài cuốn sách.
+# Nhưng Python cũng có sẵn tài liệu về hàm cho mọi hàm tích hợp trong Python. 
+# Yêu cầu của bài tập này là viết một chương trình để in tài liệu về 
+# một số hàm Python được tích hợp sẵn như abs(), int(), input() và thêm tài liệu cho hàm bạn tự định nghĩa.
+
+print(int.__doc__)
+print(abs.__doc__)
+print(input.__doc__)
+
+#Note: Cac de them doc vao ham . Bang cach them dau ... (Noi dung cua Document) ...
+
+#Bai8
+#Định nghĩa một lớp gồm có tham số lớp và có cùng tham số instance
+
+
+#Bai tap python level 2
+#Viết chương trình và in giá trị theo công thức cho trước: Q = √([(2 * C * D)/H]) 
+# (bằng chữ: Q bằng căn bậc hai của [(2 nhân C nhân D) chia H]
+# .Với giá trị cố định của C là 50, H là 30. D là dãy giá trị tùy biến, được nhập vào từ giao diện người dùng,
+# các giá trị của D được phân cách bằng dấu phẩy.
+#Ví dụ: Giả sử chuỗi giá trị của D nhập vào là 100,150,180 thì đầu ra sẽ là 18,22,24.
 
