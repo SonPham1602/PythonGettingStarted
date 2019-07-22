@@ -110,9 +110,54 @@ print(input.__doc__)
 
 
 #Bai tap python level 2
+
+#Bai 1
 #Viết chương trình và in giá trị theo công thức cho trước: Q = √([(2 * C * D)/H]) 
 # (bằng chữ: Q bằng căn bậc hai của [(2 nhân C nhân D) chia H]
 # .Với giá trị cố định của C là 50, H là 30. D là dãy giá trị tùy biến, được nhập vào từ giao diện người dùng,
 # các giá trị của D được phân cách bằng dấu phẩy.
 #Ví dụ: Giả sử chuỗi giá trị của D nhập vào là 100,150,180 thì đầu ra sẽ là 18,22,24.
+
+#Bai 16
+#Viết một chương trình chấp nhận đầu vào là một câu, đếm số chữ cái và chữ số trong câu đó. 
+# Giả sử đầu vào sau được cấp cho chương trình: hello world! 123
+#Thì đầu ra sẽ là: 
+#Số chữ cái là: 10
+#Số chữ số là: 3
+numberOfChar = 0
+numberOfNumber = 0
+x = input("Nhap vao mot chuoi:")
+for s in x :
+  if s.isdigit():
+    numberOfNumber+=1
+  else:
+    numberOfChar+=1
+
+print("So luong ki tu:",numberOfChar)
+print("So luong chu so:",numberOfNumber)
+
+
+#Bai 17
+#Viết một chương trình chấp nhận đầu vào là một câu, đếm chữ hoa, chữ thường.
+#Giả sử đầu vào là: Quản Trị Mạng
+#Thì đầu ra là:
+#Chữ hoa: 3
+#Chữ thường: 8
+
+numberOfUpper = 0
+numberOfLower = 0
+x = input("Nhap vao mot chuoi:")
+
+
+for s in x:
+  if s.isupper():
+    numberOfUpper+=1
+  elif s.islower():
+    numberOfLower+=1
+  else:
+    pass
+
+print("Chu hoa:",numberOfUpper)
+print("Chu thuong:",numberOfLower)
+
 

@@ -23,3 +23,4 @@ print("Array2 :",array2)
 array3 = array + array2
 print("Array3 is copy array :",array3)
 
+
