@@ -111,12 +111,40 @@ print(input.__doc__)
 
 #Bai tap python level 2
 
-#Bai 1
+#Bai 9
 #Viết chương trình và in giá trị theo công thức cho trước: Q = √([(2 * C * D)/H]) 
 # (bằng chữ: Q bằng căn bậc hai của [(2 nhân C nhân D) chia H]
 # .Với giá trị cố định của C là 50, H là 30. D là dãy giá trị tùy biến, được nhập vào từ giao diện người dùng,
 # các giá trị của D được phân cách bằng dấu phẩy.
 #Ví dụ: Giả sử chuỗi giá trị của D nhập vào là 100,150,180 thì đầu ra sẽ là 18,22,24.
+
+
+#Bai 10
+#Viết một chương trình có 2 chữ số, X, Y nhận giá trị từ đầu vào và tạo ra một mảng 2 chiều.
+#Giá trị phần tử trong hàng thứ i và cột thứ j của mảng phải là i*j.
+#Lưu ý: i=0,1,...,X-1; j=0,1,...,Y-1. 
+#Ví dụ: Giá trị X, Y nhập vào là 3,5 thì đầu ra là: [[0, 0, 0, 0, 0], [0, 1, 2, 3, 4], [0, 2, 4, 6, 8]]
+x=int(input("Nhap x:"))
+y=int(input("Nhap y:"))
+a = [[0] * x for i in range(y)]
+print(a)
+print(len(a))
+print(len(a[0]))
+for i in range(0,len(a)):
+    for j in range(0,len(a[i])):
+        a[i][j] = i*j
+
+
+print(a)
+
+#Bai 11
+#Viết một chương trình chấp nhận chuỗi từ do người dùng nhập vào, 
+#phân tách nhau bởi dấu phẩy và in những từ đó thành chuỗi theo thứ tự bảng chữ cái, phân tách nhau bằng dấu phẩy.
+#Giả sử đầu vào được nhập là: without,hello,bag,world, thì đầu ra sẽ là: bag,hello,without,world.
+x = input("Nhap vao mot chuoi:")
+s=x.split(",")
+s.sort()
+print(s)
 
 #Bai 16
 #Viết một chương trình chấp nhận đầu vào là một câu, đếm số chữ cái và chữ số trong câu đó. 
