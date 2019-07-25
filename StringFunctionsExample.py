@@ -72,3 +72,22 @@ print(str.islower())
 str = "HUYNHTRAMY"
 print(str.isupper())
 #It will reture true
+
+#16:isspace
+#Ham nay tra ve true khi chuoi la mot khoan trang khong chua so hay chu
+str = "       "
+print(str.isspace())
+#It will return true
+str = "Pham Ngoc Son"
+print(str.isspace())
+#it will return false
+
+#17:istitle
+#ham nay tra ve true khi tat ca chu cai dau tien cua tu deu viet hoa
+
+str = "Pham Ngoc Son"
+print(str.istitle())
+#it will return true
+
+#18: join
+#Ham nay dung 
