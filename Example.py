@@ -146,6 +146,23 @@ s=x.split(",")
 s.sort()
 print(s)
 
+#Bai 12 
+#Viết một chương trình chấp nhận chuỗi là các dòng được nhập vào, chuyển các dòng này thành chữ in hoa và in ra màn hình. Giả sử đầu vào là:
+#Hello world
+#Practice makes perfect
+#Thì đầu ra sẽ là:
+#HELLO WORLD
+#PRACTICE MAKES PERFECT
+x = input("Nhap vao mot chuoi:")
+s=x.split(" ")
+result12 = []
+for i in s:
+  result12.append(i.upper())
+
+print(result12)
+
+
+
 #Bai 16
 #Viết một chương trình chấp nhận đầu vào là một câu, đếm số chữ cái và chữ số trong câu đó. 
 # Giả sử đầu vào sau được cấp cho chương trình: hello world! 123
@@ -188,4 +205,42 @@ for s in x:
 print("Chu hoa:",numberOfUpper)
 print("Chu thuong:",numberOfLower)
 
+#Bai18
+#Viết một chương trình tính giá trị của a+aa+aaa+aaaa với a là số được nhập vào bởi người dùng.
+#Giả sử a được nhập vào là 1 thì đầu ra sẽ là: 1234
+
+a = input("Nhap vao mot so:")
+n1 = int("%s" %a)
+n2 = int("%s%s"%(a,a))
+n3 = int("%s%s%s" %(a,a,a))
+n4 = int("%s%s%s%s"%(a,a,a,a))
+print("Ket qua:",n1+n2+n3+n4)
+
+
+#Bai19
+#Sử dụng một danh sách để lọc các số lẻ từ danh sách được người dùng nhập vào.
+#Giả sử đầu vào là: 1,2,3,4,5,6,7,8,9 thì đầu ra phải là: 1,3,5,7,9
+bx = input("Nhap chuoi:")
+l=x.split(",")
+a = [x for x in l if int(x)%2!=0]
+print(a)
+
+#Bai20
+#Một website yêu cầu người dùng nhập tên người dùng và mật khẩu để đăng ký.
+#Viết chương trình để kiểm tra tính hợp lệ của mật khẩu mà người dùng nhập vào.
+#Các tiêu chí kiểm tra mật khẩu bao gồm:
+
+#1. Ít nhất 1 chữ cái nằm trong [a-z]
+#2. Ít nhất 1 số nằm trong [0-9]
+#3. Ít nhất 1 kí tự nằm trong [A-Z]
+#4. Ít nhất 1 ký tự nằm trong [$ # @]
+#5. Độ dài mật khẩu tối thiểu: 6
+#6. Độ dài mật khẩu tối đa: 12
+
+#Chương trình phải chấp nhận một chuỗi mật khẩu phân tách nhau bởi dấu phẩy và kiểm tra xem chúng có đáp ứng những tiêu chí trên hay không. 
+#Mật khẩu hợp lệ sẽ được in, mỗi mật khẩu cách nhau bởi dấu phẩy.
+
+#Ví dụ mật khẩu nhập vào chương trình là: ABd1234@1,a F1#,2w3E*,2We3345
+
+#Thì đầu ra sẽ là: ABd1234@1
 
