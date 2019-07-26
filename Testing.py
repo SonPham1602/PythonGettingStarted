@@ -1,2 +1,2 @@
-str = "PHAMNGOCSON"
-print(str.lower())
+str = "son"
+print(min(str)) 

@@ -131,4 +131,71 @@ str = "phamngocson"
 print(str.upper())
 
 #24:lstrip()
+#Ham nay dung de xoa di cac ki tu char o dau mang
+#Mac dinh la khoang cach 
+#vd:"   Son"=>"Son"
+str = "     SonPham"
+print(str.lstrip())
+#25:rstrip
+#Ham nay giong voi ham lstrip nhung vi  tri xoa thi o cuoi chuoi
+#vd:"Son      "=>"Son"
+
+str = "Son        "
+print(str.rstrip())
+
+#26:strip
+#Ham nay la to hop cua lstrip va rstrip 
+#vd:"    Son     " => "Son"
+
+str = "    Son Pham     "
+print(str.strip())
+#27: rfind
+#Ham nay  tra ve vi tri cuoi cung trong chuoi
+#vd "pham ngoc son , son dep trai"=> tra ve vi tri cua son thu 2
+str = "pham ngoc son, son dep trai"
+print(str.rfind("son"))
+
+#28:rindex => right and index
+#Ham nay dung de vi tri chuoi can tim trong chuoi luon
+#Diem khac nhau giua find va index la: Index co tra ve exeption
+
+
+
+#29:replace
+#Ham thay the chuoi trong string 
+#Co 2  cach truyen tham so
+#1:replace(str1,str2) str1=>old string ,str2 => new strng
+#2:replace(str1,str2,number) str1 => old string, str2 => new string , number => so luong tu thay the 
+
+str = "pham ngoc son"
+print(str.replace("son","SON")) 
+
+#30:Max
+#Ham nay dung de tra ve ki tu cuoi cung trong bang chu cai abc
+#vd "Son"=>"s"
+#Note:Ham nay khong thuc lop cua string nen khi muon su dung ham nay thi phai goi nhu sau max(str)
+#Note2:Ham nay chi hoat dong khi chuoi ko co dau cach
+str = "Son"
+print(max(str))
+
+#31: Min
+#Ham nay nguoc lai voi Max tra ve chu cai dau tien trong bang chu cai 
+#vd:"Son"=>"n"
+
+str = "son"
+print(max(str))
+
+#32:title
+#Ham nay se lam hoa chu cai dau tien cua cac chu trong chuoi 
+#vd:"pham ngoc son"=>"Pham Ngoc Son"
+str = "pham ngoc son"
+print(str.title())
+
+#33:swapecase
+#Ham nay se bien chu thuong thanh hoa, hoa thanh thuong 
+#vd: "Son Pham"=>"sON pHAM"
+str = "Son Pham"
+print(str.swapcase())
+
+
 
