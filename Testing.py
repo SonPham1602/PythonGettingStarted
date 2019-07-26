@@ -1,2 +1,2 @@
-str = "Phamngocson"
-print(str.isalnum())
+str = "PHAMNGOCSON"
+print(str.lower())

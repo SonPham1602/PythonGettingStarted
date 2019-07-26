@@ -90,4 +90,45 @@ print(str.istitle())
 #it will return true
 
 #18: join
-#Ham nay dung 
+#Ham nay dung de join chuoi 1 vao chuoi 2 
+#VD: str1 = " " , str2 = "son" => "s o n"
+
+str1 = " "
+str2 = "ngocson"
+print(str1.join(str2))
+#Ket qua tra ve se la: n g o c s o n
+
+#19: len()
+#ham nay tra ve lo dai cua chuoi 
+#Note: Ham nay trong thuoc class string. Nen muon su dung ham nay can phai goi nhu sau
+#len(string)
+str = "phamngocson"
+print(len(str))
+#Ket qua tra ve se la 11
+
+#20: ljust 
+#ham nay se lam day chuoi voi khi tu
+#vd: str = "sonpham"
+str = "sonpham"
+print(str.ljust(12,"_"))
+
+#21:rjust
+#Ham nay nguoc lai voi ljust
+#Thay ve them vao cuoi thi se them vao dau
+
+#22:lower
+#Ham la chuyen chu thuong thanh chu hoa
+#vd: SON =>son
+
+str = "PHAMNGOCSON"
+print(str.lower())
+
+#23:upper
+#Ham nay nguoc lai voi ham lower
+#vd: son => SON
+
+str = "phamngocson"
+print(str.upper())
+
+#24:lstrip()
+
